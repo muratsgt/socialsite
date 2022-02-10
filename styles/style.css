@@ -1,0 +1,117 @@
+@import "post.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #193760;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid #777;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-style: italic;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+main {
+  max-width: 700px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main,
+#entry,
+#posts {
+  display: flex;
+  flex-direction: column;
+}
+
+#posts {
+  margin-bottom: 25px;
+}
+
+#entry textarea {
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#entry input {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#entry textarea:focus,
+#entry input:focus {
+  box-shadow: blue 0px 1px 2px, red 0px 0px 2px;
+}
+
+#postSubmit {
+  background-color: red;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#postSubmit:hover {
+  background-color: rgb(207, 0, 0);
+}
+
+#postSubmit:active {
+  transform: scale(0.95);
+}
+
+#postSubmit:disabled {
+  background-color: #777;
+  cursor: auto;
+}
+
+#goUp{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: lightcoral;
+  color: white;
+  font-size: 2rem;
+  border-radius: 30px;
+}
+
+#goUp:hover{
+  background-color: rgb(240, 89, 89);
+}

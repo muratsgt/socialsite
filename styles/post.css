@@ -1,0 +1,89 @@
+.post {
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.post h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #444;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.user h5 {
+  margin-left: 10px;
+}
+
+.user span {
+  font-weight: lighter;
+  font-size: 0.9em;
+  color: #666;
+  text-transform: lowercase;
+  margin-left: 20px;
+}
+
+.commentsContainer {
+  margin-left: calc(2vw + 30px) ;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.commentsList {
+  display: none;
+  margin-top: 10px;
+}
+
+.commentsList[visible] {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentBox {
+  border-top: solid 1px #bbb;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.commentBox h4 {
+  font-size: smaller;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.commentHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.commentHead h5 {
+  margin-left: 7px;
+  font-size: 0.9em;
+  text-transform: lowercase;
+}
+
+.commentTogle {
+  text-align: right;
+  color: royalblue;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
